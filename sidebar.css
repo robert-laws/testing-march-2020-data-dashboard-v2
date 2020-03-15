@@ -61,3 +61,11 @@ display: inline;
 text-align: right;
 padding-left: 10px;
 }
+
+/*
+ * CUSTOM STYLES
+ */
+
+ .bg-primary-dark-blue {
+  background-color: #041E42 !important;
+}
