@@ -69,3 +69,7 @@ padding-left: 10px;
  .bg-primary-dark-blue {
   background-color: #041E42 !important;
 }
+
+.bg-primary-light-gray {
+  background-color: #f8f8f8;
+}
