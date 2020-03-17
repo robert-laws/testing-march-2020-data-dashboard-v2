@@ -9,7 +9,120 @@
   var faculty = document.getElementById('qatarFaculty');
   var staff = document.getElementById('qatarStaff');
   var undergraduates = document.getElementById('qatarUndergraduates');
+  var uclqGrad = document.getElementById('uclqGraduate');
+  var uclqFac = document.getElementById('ulcqFaculty');
 
+  var myUCLQFacultyChart = new Chart(uclqFac, {
+    type: 'line',
+    data: {
+      labels: ['2018','2019','2020'],
+      datasets: [{
+        label: 'Number of Loans',
+        data: [417,663,204],
+        lineTension: 0,
+        backgroundColor: 'transparent',
+        borderColor: '#007bff',
+        borderWidth: 4,
+        pointBorderWidth: 10,
+        pointHoverBorderWidth: 12,
+        pointBackgroundColor: '#007bff'
+      }]
+    },
+    options: {
+      scales: {
+        yAxes: [{
+          ticks: {
+            beginAtZero: false,
+            suggestedMax: 1000
+          },
+          scaleLabel: {
+            display: true,
+            labelString: 'Items'
+          }
+        }],
+        xAxes: [{
+          scaleLabel: {
+            display: true,
+            labelString: 'Years'
+          }
+        }]
+      },
+      title: {
+        display: true,
+        text: 'UCLQ Faculty/Staff Loans',
+        fontSize: 24,
+        fontFamily: "'Segoe UI',Roboto,'Helvetica Neue',Arial,'Noto Sans',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji'",
+        fontStyle: 'normal'
+      },
+      legend: {
+        display: true,
+        position: 'top',
+        align: 'center'
+      },
+      tooltips: {
+        titleFontSize: 20,
+        bodyFontSize: 16,
+        xPadding: 12,
+        yPadding: 12
+      }
+    }
+  })
+
+  var myUCLQGraduateChart = new Chart(uclqGrad, {
+    type: 'line',
+    data: {
+      labels: ['2018','2019','2020'],
+      datasets: [{
+        label: 'Number of Loans',
+        data: [677,928,397],
+        lineTension: 0,
+        backgroundColor: 'transparent',
+        borderColor: '#007bff',
+        borderWidth: 4,
+        pointBorderWidth: 10,
+        pointHoverBorderWidth: 12,
+        pointBackgroundColor: '#007bff'
+      }]
+    },
+    options: {
+      scales: {
+        yAxes: [{
+          ticks: {
+            beginAtZero: false
+          },
+          scaleLabel: {
+            display: true,
+            labelString: 'Items'
+          }
+        }],
+        xAxes: [{
+          scaleLabel: {
+            display: true,
+            labelString: 'Years'
+          }
+        }]
+      },
+      title: {
+        display: true,
+        text: 'UCLQ Student Masters Loans',
+        fontSize: 24,
+        fontFamily: "'Segoe UI',Roboto,'Helvetica Neue',Arial,'Noto Sans',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji'",
+        fontStyle: 'normal'
+      },
+      legend: {
+        display: true,
+        position: 'top',
+        align: 'center'
+      },
+      tooltips: {
+        titleFontSize: 20,
+        bodyFontSize: 16,
+        xPadding: 12,
+        yPadding: 12
+      }
+    }
+  })
+  
   var myUndergraduateChart = new Chart(undergraduates, {
     type: 'line',
     data: {
@@ -30,7 +143,8 @@
       scales: {
         yAxes: [{
           ticks: {
-            beginAtZero: false
+            beginAtZero: false,
+            suggestedMax: 6000
           },
           scaleLabel: {
             display: true,
@@ -140,7 +254,8 @@
       scales: {
         yAxes: [{
           ticks: {
-            beginAtZero: false
+            beginAtZero: false,
+            suggestedMax: 6000
           },
           scaleLabel: {
             display: true,
