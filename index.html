@@ -8,7 +8,7 @@
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="sidebar.css" rel="stylesheet">
+  <link href="styles/sidebar.css" rel="stylesheet">
 
 </head>
 <body>
@@ -16,32 +16,45 @@
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="index.html">
         <!-- <img src="https://v4-alpha.getbootstrap.com/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt=""> -->
         <span class="menu-collapsed">Library Data Dashboard</span>
     </a>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
+            <!-- <li class="nav-item active">
                 <a class="nav-link" href="#top">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#top">Features</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#top">Pricing</a>
-            </li>
+                <a class="nav-link" href="#top">Categories</a>
+            </li> -->
             <!-- This menu is hidden in bigger devices with d-sm-none. 
            The sidebar isn't proper for smaller screens imo, so this dropdown menu can keep all the useful sidebar itens exclusively for smaller screens  -->
             <li class="nav-item dropdown d-sm-block d-md-none">
-                <a class="nav-link dropdown-toggle" href="#" id="smallerscreenmenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Menu </a>
+                <a class="nav-link dropdown-toggle" href="#" id="smallerscreenmenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Core Statistics </a>
                 <div class="dropdown-menu" aria-labelledby="smallerscreenmenu">
-                    <a class="dropdown-item" href="#top">hjsahgjsa</a>
-                    <a class="dropdown-item" href="#top">Profile</a>
-                    <a class="dropdown-item" href="#top">Tasks</a>
-                    <a class="dropdown-item" href="#top">Etc ...</a>
+                    <a class="dropdown-item" href="index.html">Highlights</a>
+                    <a class="dropdown-item" href="#top">Table View</a>
                 </div>
-            </li><!-- Smaller devices menu END -->
+            </li>
+            <li class="nav-item dropdown d-sm-block d-md-none">
+                <a class="nav-link dropdown-toggle" href="#" id="smallerscreenmenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Categories </a>
+                <div class="dropdown-menu" aria-labelledby="smallerscreenmenu">
+                    <a class="dropdown-item" href="teaching-and-learning.html">Teaching & Learning</a>
+                    <a class="dropdown-item" href="collections.html">Collections</a>
+                    <a class="dropdown-item" href="physical-loans.html">Physical Loans</a>
+                    <a class="dropdown-item" href="library-staff.html">Library Staff</a>
+                    <a class="dropdown-item" href="library-facilities-and-equipment">Library Facilities & Equipment</a>
+                    <a class="dropdown-item" href="online-spaces">Online Spaces</a>
+                </div>
+            </li>
+            <li class="nav-item d-sm-block d-md-none">
+              <a class="nav-link" href="definitions.html"> Definitions </a>
+            </li>
+            <li class="nav-item d-sm-block d-md-none">
+              <a class="nav-link" href="help.html"> Help </a>
+            </li>
+            <!-- Smaller devices menu END -->
         </ul>
     </div>
 </nav><!-- NavBar END -->
@@ -49,16 +62,16 @@
 <div class="row" id="body-row">
     <!-- Sidebar -->
     <div id="sidebar-container" class="sidebar-expanded d-none d-md-block">
-        <!-- d-* hiddens the Sidebar in smaller devices. Its itens can be kept on the Navbar 'Menu' -->
+        <!-- d-* hides the Sidebar in smaller devices. Its items can be kept on the Navbar 'Menu' -->
         <!-- Bootstrap List Group -->
         <ul class="list-group">
             <!-- Separator with title -->
             <li class="list-group-item sidebar-separator-title text-muted d-flex align-items-center menu-collapsed">
-                <small>CATEGORIES</small>
+                <small>LIBRARY DATA</small>
             </li>
             <!-- /END Separator -->
             <!-- Menu with submenu -->
-            <a href="#submenu1" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+            <a id="sub-menu-one" href="#submenu1" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
                 <div class="d-flex w-100 justify-content-start align-items-center">
                     <span class="fa fa-dashboard fa-fw mr-3"></span>
                     <span class="menu-collapsed">Core Statistics</span>
@@ -67,44 +80,53 @@
             </a>
             <!-- Submenu content -->
             <div id='submenu1' class="collapse sidebar-submenu">
-                <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                <a href="index.html" class="list-group-item list-group-item-action bg-dark text-white">
                     <span class="menu-collapsed">Highlights</span>
                 </a>
-                <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                <a href="table.html" class="list-group-item list-group-item-action bg-dark text-white">
                     <span class="menu-collapsed">Table View</span>
                 </a>
-                <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
-                    <span class="menu-collapsed">Definitions</span>
-                </a>
             </div>
-            <a href="#submenu2" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+            <a id="sub-menu-two" href="#submenu2" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
                 <div class="d-flex w-100 justify-content-start align-items-center">
-                    <span class="fa fa-user fa-fw mr-3"></span>
-                    <span class="menu-collapsed">Profile</span>
+                    <span class="fa fa-object-ungroup fa-fw mr-3"></span>
+                    <span class="menu-collapsed">Categories</span>
                     <span class="submenu-icon ml-auto"></span>
                 </div>
             </a>
             <!-- Submenu content -->
             <div id='submenu2' class="collapse sidebar-submenu">
-                <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
-                    <span class="menu-collapsed">Settings</span>
+                <a href="teaching-and-learning" class="list-group-item list-group-item-action bg-dark text-white">
+                    <span class="menu-collapsed">Teaching & Learning</span>
                 </a>
-                <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
-                    <span class="menu-collapsed">Password</span>
+                <a href="collections" class="list-group-item list-group-item-action bg-dark text-white">
+                    <span class="menu-collapsed">Collections</span>
+                </a>
+                <a href="physical-loans" class="list-group-item list-group-item-action bg-dark text-white">
+                    <span class="menu-collapsed">Physical Loans</span>
+                </a>
+                <a href="library-staff" class="list-group-item list-group-item-action bg-dark text-white">
+                    <span class="menu-collapsed">Library Staff</span>
+                </a>
+                <a href="library-facilities-and-equipment" class="list-group-item list-group-item-action bg-dark text-white big-nav-option">
+                    <span class="menu-collapsed">Library Facilities & Equipment</span>
+                </a>
+                <a href="online-spaces" class="list-group-item list-group-item-action bg-dark text-white">
+                    <span class="menu-collapsed">Online Spaces</span>
                 </a>
             </div>
-            <a href="#" class="bg-dark list-group-item list-group-item-action">
+            <a href="definitions" class="bg-dark list-group-item list-group-item-action">
                 <div class="d-flex w-100 justify-content-start align-items-center">
-                    <span class="fa fa-tasks fa-fw mr-3"></span>
-                    <span class="menu-collapsed">Tasks</span>
+                    <span class="fa fa-book fa-fw mr-3"></span>
+                    <span class="menu-collapsed">Definitions</span>
                 </div>
             </a>
             <!-- Separator with title -->
-            <li class="list-group-item sidebar-separator-title text-muted d-flex align-items-center menu-collapsed">
-                <small>OPTIONS</small>
-            </li>
+            <!-- <li class="list-group-item sidebar-separator-title text-muted d-flex align-items-center menu-collapsed">
+                <small>CATEGORIES</small>
+            </li> -->
             <!-- /END Separator -->
-            <a href="#" class="bg-dark list-group-item list-group-item-action">
+            <!-- <a href="#" class="bg-dark list-group-item list-group-item-action">
                 <div class="d-flex w-100 justify-content-start align-items-center">
                     <span class="fa fa-calendar fa-fw mr-3"></span>
                     <span class="menu-collapsed">Calendar</span>
@@ -115,11 +137,11 @@
                     <span class="fa fa-envelope-o fa-fw mr-3"></span>
                     <span class="menu-collapsed">Messages <span class="badge badge-pill badge-primary ml-2">5</span></span>
                 </div>
-            </a>
+            </a> -->
             <!-- Separator without title -->
             <li class="list-group-item sidebar-separator menu-collapsed"></li>
             <!-- /END Separator -->
-            <a href="#" class="bg-dark list-group-item list-group-item-action">
+            <a href="help.html" class="bg-dark list-group-item list-group-item-action">
                 <div class="d-flex w-100 justify-content-start align-items-center">
                     <span class="fa fa-question fa-fw mr-3"></span>
                     <span class="menu-collapsed">Help</span>
@@ -176,6 +198,7 @@
               </div>
             </div>
           </div>
+          <div class="row border-bottom mt-4 pt-2"></div>
           <div class="row mt-4 d-flex flex-column">
             <h4 class='mb-3'>Collections</h4>
             <div class="card pl-4 pr-4 pb-1 pt-4 bg-primary-light-gray">
@@ -231,6 +254,7 @@
               </div>
             </div>
           </div>
+          <div class="row border-bottom mt-4 pt-2"></div>
           <div class="row mt-4 d-flex flex-column">
             <h4 class='mb-3'>Physical Loans</h4>
             <div class="card pl-4 pr-4 pb-2 bg-primary-light-gray">
@@ -340,6 +364,7 @@
               </div>
             </div>
           </div>
+          <div class="row border-bottom mt-4 pt-2"></div>
           <div class="row mt-4 d-flex flex-column">
             <h4 class='mb-3'>Library Staff</h4>
             <div class="card pl-4 pr-4 pb-1 pt-4 bg-primary-light-gray">
@@ -365,6 +390,7 @@
               </div>
             </div>
           </div>
+          <div class="row border-bottom mt-4 pt-2"></div>
           <div class="row mt-4 d-flex flex-column">
             <h4 class='mb-3'>Library Facilities and Equipment</h4>
             <div class="card pl-4 pr-4 pb-1 pt-4 bg-primary-light-gray">
@@ -444,6 +470,70 @@
               </div>
             </div>
           </div>
+          <div class="row border-bottom mt-4 pt-2"></div>
+          <div class="row mt-4 d-flex flex-column">
+            <h4 class='mb-3'>Online Spaces</h4>
+            <div class="card pl-4 pr-4 pb-2 bg-primary-light-gray">              
+              <h5 class='mt-3'>Library Website</h5>
+              <div class="d-flex justify-content-start flex-wrap align-items-start col-lg-12 col-sm">
+                <div class="card text-center mr-4 mb-4" style="width: 18rem;">
+                  <div class="card-body">
+                    <h1 class="card-title text-primary">74,326</h1>
+                    <p class="card-text">Page Hits</p>
+                  </div>
+                </div>
+                <div class="card text-center mr-4 mb-4" style="width: 18rem;">
+                  <div class="card-body">
+                    <h1 class="card-title text-primary">147</h1>
+                    <p class="card-text">Individual Study Spaces available</p>
+                  </div>
+                </div>
+                <div class="card text-center mr-4 mb-4" style="width: 18rem;">
+                  <div class="card-body">
+                    <h1 class="card-title text-primary">10</h1>
+                    <p class="card-text">Soft seating couches</p>
+                  </div>
+                </div>
+                <div class="card text-center mr-4 mb-4" style="width: 18rem;">
+                  <div class="card-body">
+                    <h1 class="card-title text-primary">2</h1>
+                    <p class="card-text">Classrooms</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-4 d-flex flex-column">
+            <div class="card pl-4 pr-4 pb-2 bg-primary-light-gray">              
+              <h5 class='mt-3'>Library Guides</h5>
+              <div class="d-flex justify-content-start flex-wrap align-items-start col-lg-12 col-sm">
+                <div class="card text-center mr-4 mb-4" style="width: 18rem;">
+                  <div class="card-body">
+                    <h1 class="card-title text-primary">74,326</h1>
+                    <p class="card-text">Page Hits</p>
+                  </div>
+                </div>
+                <div class="card text-center mr-4 mb-4" style="width: 18rem;">
+                  <div class="card-body">
+                    <h1 class="card-title text-primary">147</h1>
+                    <p class="card-text">Individual Study Spaces available</p>
+                  </div>
+                </div>
+                <div class="card text-center mr-4 mb-4" style="width: 18rem;">
+                  <div class="card-body">
+                    <h1 class="card-title text-primary">10</h1>
+                    <p class="card-text">Soft seating couches</p>
+                  </div>
+                </div>
+                <div class="card text-center mr-4 mb-4" style="width: 18rem;">
+                  <div class="card-body">
+                    <h1 class="card-title text-primary">2</h1>
+                    <p class="card-text">Classrooms</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         
 
@@ -456,8 +546,8 @@
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script> -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script> -->
   <!-- <script src="dashboard.js"></script> -->
-  <script src="sidebar.js"></script>
+  <script src="scripts/sidebar.js"></script>
 </body>
 </html>

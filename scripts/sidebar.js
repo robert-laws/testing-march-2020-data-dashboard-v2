@@ -25,3 +25,15 @@ function SidebarCollapse () {
     // Collapse/Expand icon
     $('#collapse-icon').toggleClass('fa-angle-double-left fa-angle-double-right');
 }
+
+$('#sub-menu-one').click(function() {
+  if($('.menu-collapsed').hasClass('d-none')) {
+    window.location.replace('index.html')
+  }
+})
+
+$('#sub-menu-two').click(function() {
+  if($('.menu-collapsed').hasClass('d-none')) {
+    window.location.replace('categories.html')
+  }
+})

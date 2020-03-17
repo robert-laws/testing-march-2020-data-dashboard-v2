@@ -8,40 +8,53 @@
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="sidebar.css" rel="stylesheet">
+  <link href="styles/sidebar.css" rel="stylesheet">
 
 </head>
 <body>
-  <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+  <nav class="navbar navbar-expand-md navbar-dark bg-primary-dark-blue">
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <a class="navbar-brand" href="#">
-        <img src="https://v4-alpha.getbootstrap.com/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
-        <span class="menu-collapsed">Brand</span>
+    <a class="navbar-brand" href="index.html">
+        <!-- <img src="https://v4-alpha.getbootstrap.com/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt=""> -->
+        <span class="menu-collapsed">Library Data Dashboard</span>
     </a>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
+            <!-- <li class="nav-item active">
                 <a class="nav-link" href="#top">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#top">Features</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#top">Pricing</a>
-            </li>
+                <a class="nav-link" href="#top">Categories</a>
+            </li> -->
             <!-- This menu is hidden in bigger devices with d-sm-none. 
            The sidebar isn't proper for smaller screens imo, so this dropdown menu can keep all the useful sidebar itens exclusively for smaller screens  -->
+           <li class="nav-item dropdown d-sm-block d-md-none">
+              <a class="nav-link dropdown-toggle" href="#" id="smallerscreenmenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Core Statistics </a>
+              <div class="dropdown-menu" aria-labelledby="smallerscreenmenu">
+                <a class="dropdown-item" href="index.html">Highlights</a>
+                <a class="dropdown-item" href="#top">Table View</a>
+              </div>
+            </li>
             <li class="nav-item dropdown d-sm-block d-md-none">
-                <a class="nav-link dropdown-toggle" href="#" id="smallerscreenmenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Menu </a>
-                <div class="dropdown-menu" aria-labelledby="smallerscreenmenu">
-                    <a class="dropdown-item" href="#top">hjsahgjsa</a>
-                    <a class="dropdown-item" href="#top">Profile</a>
-                    <a class="dropdown-item" href="#top">Tasks</a>
-                    <a class="dropdown-item" href="#top">Etc ...</a>
-                </div>
-            </li><!-- Smaller devices menu END -->
+              <a class="nav-link dropdown-toggle" href="#" id="smallerscreenmenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Categories </a>
+              <div class="dropdown-menu" aria-labelledby="smallerscreenmenu">
+                <a class="dropdown-item" href="teaching-and-learning.html">Teaching & Learning</a>
+                <a class="dropdown-item" href="collections.html">Collections</a>
+                <a class="dropdown-item" href="physical-loans.html">Physical Loans</a>
+                <a class="dropdown-item" href="library-staff.html">Library Staff</a>
+                <a class="dropdown-item" href="library-facilities-and-equipment">Library Facilities & Equipment</a>
+                <a class="dropdown-item" href="online-spaces">Online Spaces</a>
+              </div>
+            </li>
+            <li class="nav-item d-sm-block d-md-none">
+              <a class="nav-link" href="definitions.html"> Definitions </a>
+            </li>
+            <li class="nav-item d-sm-block d-md-none">
+              <a class="nav-link" href="help.html"> Help </a>
+            </li>
+            <!-- Smaller devices menu END -->
         </ul>
     </div>
 </nav><!-- NavBar END -->
@@ -54,57 +67,66 @@
         <ul class="list-group">
             <!-- Separator with title -->
             <li class="list-group-item sidebar-separator-title text-muted d-flex align-items-center menu-collapsed">
-                <small>MAIN MENU</small>
+                <small>LIBRARY DATA</small>
             </li>
             <!-- /END Separator -->
             <!-- Menu with submenu -->
-            <a href="#submenu1" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+            <a id="sub-menu-one" href="#submenu1" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
                 <div class="d-flex w-100 justify-content-start align-items-center">
                     <span class="fa fa-dashboard fa-fw mr-3"></span>
-                    <span class="menu-collapsed">Dashboard</span>
+                    <span class="menu-collapsed">Core Statistics</span>
                     <span class="submenu-icon ml-auto"></span>
                 </div>
             </a>
             <!-- Submenu content -->
             <div id='submenu1' class="collapse sidebar-submenu">
-                <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
-                    <span class="menu-collapsed">Chahgag</span>
+                <a href="index.html" class="list-group-item list-group-item-action bg-dark text-white">
+                    <span class="menu-collapsed">Highlights</span>
                 </a>
-                <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
-                    <span class="menu-collapsed">Reports</span>
-                </a>
-                <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
-                    <span class="menu-collapsed">Tables</span>
+                <a href="table.html" class="list-group-item list-group-item-action bg-dark text-white">
+                    <span class="menu-collapsed">Table View</span>
                 </a>
             </div>
-            <a href="#submenu2" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+            <a id="sub-menu-two" href="#submenu2" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
                 <div class="d-flex w-100 justify-content-start align-items-center">
-                    <span class="fa fa-user fa-fw mr-3"></span>
-                    <span class="menu-collapsed">Profile</span>
+                    <span class="fa fa-object-ungroup fa-fw mr-3"></span>
+                    <span class="menu-collapsed">Categories</span>
                     <span class="submenu-icon ml-auto"></span>
                 </div>
             </a>
             <!-- Submenu content -->
             <div id='submenu2' class="collapse sidebar-submenu">
-                <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
-                    <span class="menu-collapsed">Settings</span>
+                <a href="teaching-and-learning" class="list-group-item list-group-item-action bg-dark text-white">
+                    <span class="menu-collapsed">Teaching & Learning</span>
                 </a>
-                <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
-                    <span class="menu-collapsed">Password</span>
+                <a href="collections" class="list-group-item list-group-item-action bg-dark text-white">
+                    <span class="menu-collapsed">Collections</span>
+                </a>
+                <a href="physical-loans" class="list-group-item list-group-item-action bg-dark text-white">
+                    <span class="menu-collapsed">Physical Loans</span>
+                </a>
+                <a href="library-staff" class="list-group-item list-group-item-action bg-dark text-white">
+                    <span class="menu-collapsed">Library Staff</span>
+                </a>
+                <a href="library-facilities-and-equipment" class="list-group-item list-group-item-action bg-dark text-white big-nav-option">
+                    <span class="menu-collapsed">Library Facilities & Equipment</span>
+                </a>
+                <a href="online-spaces" class="list-group-item list-group-item-action bg-dark text-white">
+                    <span class="menu-collapsed">Online Spaces</span>
                 </a>
             </div>
-            <a href="#" class="bg-dark list-group-item list-group-item-action">
+            <a href="definitions" class="bg-dark list-group-item list-group-item-action">
                 <div class="d-flex w-100 justify-content-start align-items-center">
-                    <span class="fa fa-tasks fa-fw mr-3"></span>
-                    <span class="menu-collapsed">Tasks</span>
+                    <span class="fa fa-book fa-fw mr-3"></span>
+                    <span class="menu-collapsed">Definitions</span>
                 </div>
             </a>
             <!-- Separator with title -->
-            <li class="list-group-item sidebar-separator-title text-muted d-flex align-items-center menu-collapsed">
-                <small>OPTIONS</small>
-            </li>
+            <!-- <li class="list-group-item sidebar-separator-title text-muted d-flex align-items-center menu-collapsed">
+                <small>CATEGORIES</small>
+            </li> -->
             <!-- /END Separator -->
-            <a href="#" class="bg-dark list-group-item list-group-item-action">
+            <!-- <a href="#" class="bg-dark list-group-item list-group-item-action">
                 <div class="d-flex w-100 justify-content-start align-items-center">
                     <span class="fa fa-calendar fa-fw mr-3"></span>
                     <span class="menu-collapsed">Calendar</span>
@@ -115,17 +137,17 @@
                     <span class="fa fa-envelope-o fa-fw mr-3"></span>
                     <span class="menu-collapsed">Messages <span class="badge badge-pill badge-primary ml-2">5</span></span>
                 </div>
-            </a>
+            </a> -->
             <!-- Separator without title -->
             <li class="list-group-item sidebar-separator menu-collapsed"></li>
             <!-- /END Separator -->
-            <a href="#" class="bg-dark list-group-item list-group-item-action">
+            <a href="help.html" class="bg-dark list-group-item list-group-item-action">
                 <div class="d-flex w-100 justify-content-start align-items-center">
                     <span class="fa fa-question fa-fw mr-3"></span>
                     <span class="menu-collapsed">Help</span>
                 </div>
             </a>
-            <a href="#top" data-toggle="sidebar-colapse" class="bg-dark list-group-item list-group-item-action d-flex align-items-center">
+            <a href="#top" data-toggle="sidebar-collapse" class="bg-dark list-group-item list-group-item-action d-flex align-items-center">
                 <div class="d-flex w-100 justify-content-start align-items-center">
                     <span id="collapse-icon" class="fa fa-2x mr-3"></span>
                     <span id="collapse-text" class="menu-collapsed">Collapse</span>
@@ -137,8 +159,8 @@
     <div class="col p-4">
       <main role="main" class="col-md-12 ml-sm-auto col-lg-12 px-4">
         <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-          <h1 class="h2">Library Core Statistics</h1>
-          <div class="btn-toolbar mb-2 mb-md-0">
+          <h1 class="h2">Statistics Subpage</h1>
+          <!-- <div class="btn-toolbar mb-2 mb-md-0">
             <div class="btn-group mr-2">
               <button type="button" class="btn btn-sm btn-outline-secondary">Share</button>
               <button type="button" class="btn btn-sm btn-outline-secondary">Export</button>
@@ -147,7 +169,7 @@
               <span data-feather="calendar"></span>
               This week
             </button>
-          </div>
+          </div> -->
         </div>
 
         <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas>
@@ -289,8 +311,8 @@
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
-  <script src="dashboard.js"></script>
-  <script src="sidebar.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+  <script src="scripts/dashboard.js"></script>
+  <script src="scripts/sidebar.js"></script>
 </body>
 </html>
