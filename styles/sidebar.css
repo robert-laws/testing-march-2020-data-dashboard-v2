@@ -77,3 +77,16 @@ padding-left: 10px;
 #sidebar-container .list-group .sidebar-submenu a.big-nav-option {
   height: 65px;
 }
+
+.data-table-left {
+  width: 70%
+}
+
+.data-table-right {
+  width: 30%;
+  text-align: right;
+}
+
+.table th:first-child {
+  border-top: none;
+}
