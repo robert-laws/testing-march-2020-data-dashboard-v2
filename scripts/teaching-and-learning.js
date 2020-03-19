@@ -162,7 +162,7 @@
       },
       title: {
         display: true,
-        text: 'Service Desk Analytics - Entries (July 2019 - June 2020)',
+        text: 'Service Desk - Entries (July 2019 - June 2020)',
         fontSize: 24,
         fontFamily: "'Segoe UI',Roboto,'Helvetica Neue',Arial,'Noto Sans',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji'",
         fontStyle: 'normal'
