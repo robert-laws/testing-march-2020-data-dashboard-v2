@@ -87,6 +87,11 @@ padding-left: 10px;
   text-align: right;
 }
 
+.data-table-right-half {
+  width: 15%;
+  text-align: right;
+}
+
 .table th:first-child {
   border-top: none;
 }
