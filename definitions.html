@@ -178,10 +178,276 @@
 
         <div class='container-fluid'>
           <div class="card pl-4 pr-4 pb-2 bg-primary-light-gray">
-            
-            <div class="row mt-4 d-flex flex-row">
-              <strong>Information Literacy Classes</strong> : Individual instruction given to a group or class.
+            <div class="row mx-2 mt-3 d-flex flex-column">
+              <h4 class="mb-3">Teaching and Learning</h4>
+              <div class="table-responsive">
+                <table class="table table-definitions table-striped table-bordered">
+                  <thead>
+                    <tr>
+                      <th>Data Location</th>
+                      <th>Logic</th>
+                      <th>Conditions/Filters</th>
+                      <th>Date Range</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class='data-table-definition-left'>Research Skills Classes</td>
+                      <td class='data-table-definition-logic'>LibInsight > Analyze > Library Instruction/Tours Analytics</td>
+                      <td class='data-table-definition-filter'>Session Type is Instruction</td>
+                      <td class='data-table-definition-date'>July 1, 2019 - June 30, 2020</td>
+                    </tr>
+                    <tr>
+                      <td class='data-table-definition-left'>Research Consultations (one-on-one)</td>
+                      <td class='data-table-definition-logic'>LibInsight > Analyze > Library Consultations Analytics</td>
+                      <td class='data-table-definition-filter'>None</td>
+                      <td class='data-table-definition-date'>July 1, 2019 - June 30, 2020</td>
+                    </tr>
+                    <tr>
+                      <td class='data-table-definition-left'>Reference queries</td>
+                      <td class='data-table-definition-logic'>LibInsight > Analyze > Service Desk Analytics</td>
+                      <td class='data-table-definition-filter'>None</td>
+                      <td class='data-table-definition-date'>July 1, 2019 - June 30, 2020</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
+
+            <div class="row mx-2 mt-3 d-flex flex-column">
+              <h4 class="mb-3">Collections</h4>
+              <div class="table-responsive">
+                <table class="table table-definitions table-striped table-bordered">
+                  <thead>
+                    <tr>
+                      <th>Data Location</th>
+                      <th>Logic</th>
+                      <th>Conditions/Filters</th>
+                      <th>Date Range</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class='data-table-definition-left'>Books, print</td>
+                      <td class='data-table-definition-logic'>Alma Analytics > Physical Items > Fields = Library Name, Location Name, Num Items (In Repository) > Book</td>
+                      <td class='data-table-definition-filter'>Location Name is Qatar Library</td>
+                      <td class='data-table-definition-date'>All Dates</td>
+                    </tr>
+                    <tr>
+                      <td class='data-table-definition-left'>Books, online</td>
+                      <td class='data-table-definition-logic'>Alma Analytics > E-Inventory > Fields = Material Type, No. of Portfolio (In Repository)</td>
+                      <td class='data-table-definition-filter'>None</td>
+                      <td class='data-table-definition-date'>All Dates</td>
+                    </tr>
+                    <tr>
+                      <td class='data-table-definition-left'>Books, Kindle</td>
+                      <td class='data-table-definition-logic'>Alma Analytics > Physical Items > Fields = Library Name, Location Name, Edition, Num of Items (In Repository)</td>
+                      <td class='data-table-definition-filter'>Library Name is Qatar Library AND Location Name is Circulation Desk</td>
+                      <td class='data-table-definition-date'>All Dates</td>
+                    </tr>
+                    <tr>
+                      <td class='data-table-definition-left'>Journals, print</td>
+                      <td class='data-table-definition-logic'>Alma Analytics > Physical Items > Fields = Library Name, Location Name, Edition, Num of Items (In Repository)</td>
+                      <td class='data-table-definition-filter'>Library Name is Qatar Library AND Location Name is Circulation Periodicals, Aggregation Rule (Totals Row) is Count Distinct</td>
+                      <td class='data-table-definition-date'>All Dates</td>
+                    </tr>
+                    <tr>
+                      <td class='data-table-definition-left'>Journals, online</td>
+                      <td class='data-table-definition-logic'>Alma Analytics > E-Inventory > Fields = Material Type, No. of Portfolio (In Repository) > Journal</td>
+                      <td class='data-table-definition-filter'>None</td>
+                      <td class='data-table-definition-date'>All Dates</td>
+                    </tr>
+                    <tr>
+                      <td class='data-table-definition-left'>Movies & Documentaries, DVD</td>
+                      <td class='data-table-definition-logic'>Alma Analytics > Physical Items > Fields = Library Name, Material Type, Num of Items (In Repository)</td>
+                      <td class='data-table-definition-filter'>Library Name is Qatar Library AND Material Type is DVD</td>
+                      <td class='data-table-definition-date'>All Dates</td>
+                    </tr>
+                    <tr>
+                      <td class='data-table-definition-left'>Movies & Documentaries, online</td>
+                      <td class='data-table-definition-logic'>Alma Analytics > E-Inventory > Fields = Material Type, No. of Portfolio (In Repository) > Streaming Video</td>
+                      <td class='data-table-definition-filter'>None</td>
+                      <td class='data-table-definition-date'>All Dates</td>
+                    </tr>
+                    <tr>
+                      <td class='data-table-definition-left'>Databases</td>
+                      <td class='data-table-definition-logic'>Main Campus A-Z List > All Databases Total</td>
+                      <td class='data-table-definition-filter'>None</td>
+                      <td class='data-table-definition-date'>All Dates</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            
+            <div class="row mx-2 mt-3 d-flex flex-column">
+              <h4 class="mb-3">Physical Loans</h4>
+              <div class="table-responsive">
+                <table class="table table-definitions table-striped table-bordered">
+                  <thead>
+                    <tr>
+                      <th>Data Location</th>
+                      <th>Logic</th>
+                      <th>Conditions/Filters</th>
+                      <th>Date Range</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class='data-table-definition-left'>GU-Q Students</td>
+                      <td class='data-table-definition-logic'>Alma Analytics > Fulfillment > Fields = Patron Group, Loan Year > Loans</td>
+                      <td class='data-table-definition-filter'>Patron Group is Qatar - Undergraduate</td>
+                      <td class='data-table-definition-date'>...</td>
+                    </tr>
+                    <tr>
+                      <td class='data-table-definition-left'>GU-Q Faculty/Staff</td>
+                      <td class='data-table-definition-logic'>Alma Analytics > Fulfillment > Fields = Patron Group, Loan Year > Loans</td>
+                      <td class='data-table-definition-filter'>Patron Group is Qatar - Faculty AND Qatar - Staff</td>
+                      <td class='data-table-definition-date'>...</td>
+                    </tr>
+                    <tr>
+                      <td class='data-table-definition-left'>GU-Q Alumni</td>
+                      <td class='data-table-definition-logic'>Alma Analytics > Fulfillment > Fields = Patron Group, Loan Year > Loans</td>
+                      <td class='data-table-definition-filter'>Patron Group is Qatar - Alumni</td>
+                      <td class='data-table-definition-date'>...</td>
+                    </tr>
+                    <tr>
+                      <td class='data-table-definition-left'>UCL-Q Faculty/Staff</td>
+                      <td class='data-table-definition-logic'>Alma Analytics > Fulfillment > Fields = Patron Group, Loan Year > Loans</td>
+                      <td class='data-table-definition-filter'>Patron Group is UCL-Q - Faculty/Staff</td>
+                      <td class='data-table-definition-date'>...</td>
+                    </tr>
+                    <tr>
+                      <td class='data-table-definition-left'>UCL-Q Students</td>
+                      <td class='data-table-definition-logic'>Alma Analytics > Fulfillment > Fields = Patron Group, Loan Year > Loans</td>
+                      <td class='data-table-definition-filter'>Patron Group is UCL-Q - Student Masters</td>
+                      <td class='data-table-definition-date'>...</td>
+                    </tr>
+                    <tr>
+                      <td class='data-table-definition-left'>Loans to other Education City Libraries</td>
+                      <td class='data-table-definition-logic'>...</td>
+                      <td class='data-table-definition-filter'>None</td>
+                      <td class='data-table-definition-date'>...</td>
+                    </tr>
+                    <tr>
+                      <td class='data-table-definition-left'>Loans to Qatar University Library</td>
+                      <td class='data-table-definition-logic'>...</td>
+                      <td class='data-table-definition-filter'>None</td>
+                      <td class='data-table-definition-date'>...</td>
+                    </tr>
+                    <tr>
+                      <td class='data-table-definition-left'>Loans to American School of Doha Library</td>
+                      <td class='data-table-definition-logic'>...</td>
+                      <td class='data-table-definition-filter'>None</td>
+                      <td class='data-table-definition-date'>...</td>
+                    </tr>
+                    <tr>
+                      <td class='data-table-definition-left'>Loans to Main Campus Libraries</td>
+                      <td class='data-table-definition-logic'>...</td>
+                      <td class='data-table-definition-filter'>None</td>
+                      <td class='data-table-definition-date'>...</td>
+                    </tr>
+                    <tr>
+                      <td class='data-table-definition-left'>Loans from other Education City Libraries</td>
+                      <td class='data-table-definition-logic'>...</td>
+                      <td class='data-table-definition-filter'>None</td>
+                      <td class='data-table-definition-date'>...</td>
+                    </tr>
+                    <tr>
+                      <td class='data-table-definition-left'>Loans from Qatar University Library</td>
+                      <td class='data-table-definition-logic'>...</td>
+                      <td class='data-table-definition-filter'>None</td>
+                      <td class='data-table-definition-date'>...</td>
+                    </tr>
+                    <tr>
+                      <td class='data-table-definition-left'>Loans from Main Campus Libraries</td>
+                      <td class='data-table-definition-logic'>...</td>
+                      <td class='data-table-definition-filter'>None</td>
+                      <td class='data-table-definition-date'>...</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="row mx-2 mt-3 d-flex flex-column">
+              <h4 class="mb-3">Library Staff, Facilities, & Equipment</h4>
+              <div class="table-responsive">
+                <table class="table table-definitions table-striped table-bordered">
+                  <thead>
+                    <tr>
+                      <th>Data Location</th>
+                      <th>Logic</th>
+                      <th>Conditions/Filters</th>
+                      <th>Date Range</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class='data-table-definition-left'>All Items</td>
+                      <td class='data-table-definition-logic'>Physical Count</td>
+                      <td class='data-table-definition-filter'>None</td>
+                      <td class='data-table-definition-date'>...</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="row mx-2 mt-3 d-flex flex-column">
+              <h4 class="mb-3">Online Spaces</h4>
+              <div class="table-responsive">
+                <table class="table table-definitions table-striped table-bordered">
+                  <thead>
+                    <tr>
+                      <th>Data Location</th>
+                      <th>Logic</th>
+                      <th>Conditions/Filters</th>
+                      <th>Date Range</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class='data-table-definition-left'>Library Website - Page Hits</td>
+                      <td class='data-table-definition-logic'>Google Analytics > Library Website > Acquisition > Page Hits</td>
+                      <td class='data-table-definition-filter'>None</td>
+                      <td class='data-table-definition-date'>July 1, 2019 - June 30, 20202</td>
+                    </tr>
+                    <tr>
+                      <td class='data-table-definition-left'>Library Website - Users</td>
+                      <td class='data-table-definition-logic'>Google Analytics > Library Website > Audience > Users</td>
+                      <td class='data-table-definition-filter'>None</td>
+                      <td class='data-table-definition-date'>July 1, 2019 - June 30, 20202</td>
+                    </tr>
+                    <tr>
+                      <td class='data-table-definition-left'>Library Website - Average Time on Page</td>
+                      <td class='data-table-definition-logic'>Google Analytics > Library Website > Behavior > Avg. Time on Page</td>
+                      <td class='data-table-definition-filter'>None</td>
+                      <td class='data-table-definition-date'>July 1, 2019 - June 30, 20202</td>
+                    </tr>
+                    <tr>
+                      <td class='data-table-definition-left'>Library Guides - Page Hits</td>
+                      <td class='data-table-definition-logic'>Google Analytics > Library Website > Acquisition > Page Hits</td>
+                      <td class='data-table-definition-filter'>None</td>
+                      <td class='data-table-definition-date'>July 1, 2019 - June 30, 20202</td>
+                    </tr>
+                    <tr>
+                      <td class='data-table-definition-left'>Library Guides - Users</td>
+                      <td class='data-table-definition-logic'>Google Analytics > Library Website > Audience > Users</td>
+                      <td class='data-table-definition-filter'>None</td>
+                      <td class='data-table-definition-date'>July 1, 2019 - June 30, 20202</td>
+                    </tr>
+                    <tr>
+                      <td class='data-table-definition-left'>Library Guides - Average Time on Page</td>
+                      <td class='data-table-definition-logic'>Google Analytics > Library Website > Behavior > Avg. Time on Page</td>
+                      <td class='data-table-definition-filter'>None</td>
+                      <td class='data-table-definition-date'>July 1, 2019 - June 30, 20202</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
           </div>
         </div>
       </main>
