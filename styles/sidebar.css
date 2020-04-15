@@ -120,3 +120,16 @@ padding-left: 10px;
   border-top: 1px solid #dee2e6;
   /* padding: 10px 5px; */
 }
+
+.section-heading {
+  margin-left: -18px;
+}
+
+.section-heading a {
+  color: #0056b3;
+}
+
+.section-heading a:hover {
+  color: #0056b3;
+  background-color: #FFF;
+}
