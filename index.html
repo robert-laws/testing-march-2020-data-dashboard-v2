@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Data Dashboard">
+  <title>Data Dashboard</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="styles/sidebar.css" rel="stylesheet">
+
+</head>
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark bg-primary-dark-blue">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="index.html">
+        <!-- <img src="https://v4-alpha.getbootstrap.com/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt=""> -->
+        <span class="menu-collapsed">Library Data Dashboard</span>
+    </a>
+    
+</nav><!-- NavBar END -->
+<!-- Bootstrap row -->
+<div class="row" id="body-row">
+    <!-- Sidebar -->
+    
+    <!-- MAIN -->
+    <div class="col p-4">
+      <main role="main" class="col-md-12 ml-sm-auto col-lg-12 px-4">
+        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+          <h1 class="h2">Statistical Reporting Year</h1>
+          <!-- <div class="btn-toolbar mb-2 mb-md-0">
+            <div class="btn-group mr-2">
+              <button type="button" class="btn btn-sm btn-outline-secondary">Share</button>
+              <button type="button" class="btn btn-sm btn-outline-secondary">Export</button>
+            </div>
+            <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">
+              <span data-feather="calendar"></span>
+              This week
+            </button>
+          </div> -->
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <a href="/2019" class="btn btn-primary btn-lg btn-block p-4" role="button">2019</a>
+            </div>
+            <div class="col">
+              <a href="/2020" class="btn btn-primary btn-lg btn-block p-4" role="button">2020</a>
+            </div>
+          </div>
+        </div>
+          
+      </main>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script> -->
+  <!-- <script src="dashboard.js"></script> -->
+  <script src="scripts/sidebar.js"></script>
+
+  <script>
+
+    let url = 'https://spreadsheets.google.com/feeds/list/1wmAwWzTXUd4YfaXvaUugAW3dhYcnC-WJwiNxIwrjzIs/od6/public/values?alt=json';
+
+    $(document).ready(function() {
+      $.getJSON(url, function(result){
+        let entries = result.feed.entry;
+        console.log(result.feed.entry);
+        $.each(entries, function(i, field){
+          let fieldId = field.gsx$datapoint.$t;
+          let fieldValue = field.gsx$data.$t;
+          // console.log(fieldId);
+          // console.log(fieldValue);
+          let d = document.getElementById(fieldId);
+          d.innerText = fieldValue;
+        });
+      });
+    })
+
+  </script>
+</body>
+</html>
