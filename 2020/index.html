@@ -550,7 +550,7 @@
     $(document).ready(function() {
       $.getJSON(url, function(result){
         let entries = result.feed.entry;
-        console.log(result.feed.entry);
+        // console.log(result.feed.entry);
         $.each(entries, function(i, field){
           let fieldId = field.gsx$datapoint.$t;
           let fieldValue = field.gsx$data.$t;
