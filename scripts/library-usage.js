@@ -934,7 +934,7 @@
     }
   })
   
-  var myByFallWeekday = new Chart(byFallWeekday, {
+  var myBySpringWeekday = new Chart(bySpringWeekday, {
     type: 'bar',
     data: {
       labels: [
@@ -1020,7 +1020,7 @@
       },
       title: {
         display: true,
-        text: 'Fall 2019 Weekday Average',
+        text: 'Spring 2020 Weekday Average',
         fontSize: 24,
         fontFamily: "'Segoe UI',Roboto,'Helvetica Neue',Arial,'Noto Sans',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji'",
         fontStyle: 'normal'
