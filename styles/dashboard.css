@@ -52,3 +52,7 @@ body {
 .bg-primary-dark-blue {
   background-color: #041E42 !important;
 }
+
+.stat-definition {
+  margin: 10px 20px;
+}
