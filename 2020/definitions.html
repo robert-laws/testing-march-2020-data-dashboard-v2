@@ -177,7 +177,7 @@
               This week
             </button>
           </div> -->
-          <p>The tables below explains the origin of each data source, how it is queried, and what filters and/or date ranges are applied to it for the final data point.</p>
+          <p>The tables below explain the origin of each data source, how it is queried, and what filters and/or date ranges are applied to it for the final data point.</p>
         </div>
 
         <div class='container-fluid'>
@@ -198,20 +198,20 @@
                     <tr>
                       <td class='data-table-definition-left'>Research Skills Classes</td>
                       <td class='data-table-definition-logic'>LibInsight > Analyze > Library Instruction/Tours Analytics</td>
-                      <td class='data-table-definition-filter'>Session Type is Instruction</td>
-                      <td class='data-table-definition-date'>July 1, 2019 - June 30, 2020</td>
+                      <td class='data-table-definition-filter'>Session Type is Instruction OR Online Instruction </td>
+                      <td class='data-table-definition-date'>May 1, 2019 - April 30, 2020</td>
                     </tr>
                     <tr>
                       <td class='data-table-definition-left'>Research Consultations (one-on-one)</td>
                       <td class='data-table-definition-logic'>LibInsight > Analyze > Library Consultations Analytics</td>
                       <td class='data-table-definition-filter'>None</td>
-                      <td class='data-table-definition-date'>July 1, 2019 - June 30, 2020</td>
+                      <td class='data-table-definition-date'>May 1, 2019 - April 30, 2020</td>
                     </tr>
                     <tr>
                       <td class='data-table-definition-left'>Reference queries</td>
                       <td class='data-table-definition-logic'>LibInsight > Analyze > Service Desk Analytics</td>
                       <td class='data-table-definition-filter'>None</td>
-                      <td class='data-table-definition-date'>July 1, 2019 - June 30, 2020</td>
+                      <td class='data-table-definition-date'>May 1, 2019 - April 30, 2020</td>
                     </tr>
                   </tbody>
                 </table>
@@ -299,80 +299,112 @@
                   <tbody>
                     <tr>
                       <td class='data-table-definition-left'>GU-Q Students</td>
-                      <td class='data-table-definition-logic'>Alma Analytics > Fulfillment > Fields = Patron Group, Loan Year > Loans</td>
-                      <td class='data-table-definition-filter'>Patron Group is Qatar - Undergraduate</td>
-                      <td class='data-table-definition-date'>...</td>
+                      <td class='data-table-definition-logic'>Alma Analytics > Fulfillment > Fields = Patron Group, Loan Date, Loans (In House & Not In House)</td>
+                      <td class='data-table-definition-filter'>Patron Group is Qatar - Undergraduate, Loan Date is between May 1, 2019 - April 30, 2020, Aggregation Rule (Totals Row) for Loans</td>
+                      <td class='data-table-definition-date'>May 1, 2019 - April 30, 2020</td>
                     </tr>
                     <tr>
                       <td class='data-table-definition-left'>GU-Q Faculty/Staff</td>
-                      <td class='data-table-definition-logic'>Alma Analytics > Fulfillment > Fields = Patron Group, Loan Year > Loans</td>
-                      <td class='data-table-definition-filter'>Patron Group is Qatar - Faculty AND Qatar - Staff</td>
-                      <td class='data-table-definition-date'>...</td>
+                      <td class='data-table-definition-logic'>Alma Analytics > Fulfillment > Fields = Patron Group, Loan Date, Loans (In House & Not In House)</td>
+                      <td class='data-table-definition-filter'>Patron Group is Qatar - Faculty AND Qatar - Staff, Loan Date is between May 1, 2019 - April 30, 2020, Aggregation Rule (Totals Row) for Loans</td>
+                      <td class='data-table-definition-date'>May 1, 2019 - April 30, 2020</td>
                     </tr>
                     <tr>
                       <td class='data-table-definition-left'>GU-Q Alumni</td>
-                      <td class='data-table-definition-logic'>Alma Analytics > Fulfillment > Fields = Patron Group, Loan Year > Loans</td>
-                      <td class='data-table-definition-filter'>Patron Group is Qatar - Alumni</td>
-                      <td class='data-table-definition-date'>...</td>
+                      <td class='data-table-definition-logic'>Alma Analytics > Fulfillment > Fields = Patron Group, Loan Date, Loans (In House & Not In House)</td>
+                      <td class='data-table-definition-filter'>Patron Group is Qatar - Alumni, Loan Date is between May 1, 2019 - April 30, 2020, Aggregation Rule (Totals Row) for Loans</td>
+                      <td class='data-table-definition-date'>May 1, 2019 - April 30, 2020</td>
                     </tr>
                     <tr>
                       <td class='data-table-definition-left'>UCL-Q Faculty/Staff</td>
-                      <td class='data-table-definition-logic'>Alma Analytics > Fulfillment > Fields = Patron Group, Loan Year > Loans</td>
-                      <td class='data-table-definition-filter'>Patron Group is UCL-Q - Faculty/Staff</td>
-                      <td class='data-table-definition-date'>...</td>
+                      <td class='data-table-definition-logic'>Alma Analytics > Fulfillment > Fields = Patron Group, Loan Date, Loans (In House & Not In House)</td>
+                      <td class='data-table-definition-filter'>Patron Group is UCL-Q - Faculty/Staff, Loan Date is between May 1, 2019 - April 30, 2020, Aggregation Rule (Totals Row) for Loans</td>
+                      <td class='data-table-definition-date'>May 1, 2019 - April 30, 2020</td>
                     </tr>
                     <tr>
                       <td class='data-table-definition-left'>UCL-Q Students</td>
-                      <td class='data-table-definition-logic'>Alma Analytics > Fulfillment > Fields = Patron Group, Loan Year > Loans</td>
-                      <td class='data-table-definition-filter'>Patron Group is UCL-Q - Student Masters</td>
-                      <td class='data-table-definition-date'>...</td>
+                      <td class='data-table-definition-logic'>Alma Analytics > Fulfillment > Fields = Patron Group, Loan Date, Loans (In House & Not In House)</td>
+                      <td class='data-table-definition-filter'>Patron Group is UCL-Q - Student Masters, Loan Date is between May 1, 2019 - April 30, 2020, Aggregation Rule (Totals Row) for Loans</td>
+                      <td class='data-table-definition-date'>May 1, 2019 - April 30, 2020</td>
                     </tr>
                     <tr>
                       <td class='data-table-definition-left'>Loans to other Education City Libraries</td>
-                      <td class='data-table-definition-logic'>...</td>
-                      <td class='data-table-definition-filter'>None</td>
-                      <td class='data-table-definition-date'>...</td>
+                      <td class='data-table-definition-logic'>Alma Analytics > Fulfillment > Fields = Patron Group, Loan Date, First Name, Loans (In House & Not In House)</td>
+                      <td class='data-table-definition-filter'>Patron Group is Qatar - EC-ILL, Loan Date is between May 1, 2019 - April 30, 2020, Aggregation Rule (Totals Row) for Loans, First Name IS NOT Qatar University OR </td>
+                      <td class='data-table-definition-date'>May 1, 2019 - April 30, 2020</td>
                     </tr>
                     <tr>
                       <td class='data-table-definition-left'>Loans to Qatar University Library</td>
-                      <td class='data-table-definition-logic'>...</td>
-                      <td class='data-table-definition-filter'>None</td>
-                      <td class='data-table-definition-date'>...</td>
+                      <td class='data-table-definition-logic'>Alma Analytics > Fulfillment > Fields = Patron Group, Loan Date, First Name, Loans (In House & Not In House)</td>
+                      <td class='data-table-definition-filter'>Patron Group is Qatar - EC-ILL, Loan Date is between May 1, 2019 - April 30, 2020, Aggregation Rule (Totals Row) for Loans, First Name IS Qatar University</td>
+                      <td class='data-table-definition-date'>May 1, 2019 - April 30, 2020</td>
                     </tr>
                     <tr>
                       <td class='data-table-definition-left'>Loans to American School of Doha Library</td>
-                      <td class='data-table-definition-logic'>...</td>
-                      <td class='data-table-definition-filter'>None</td>
-                      <td class='data-table-definition-date'>...</td>
+                      <td class='data-table-definition-logic'>Alma Analytics > Fulfillment > Fields = Patron Group, Loan Date, First Name, Loans (In House & Not In House)</td>
+                      <td class='data-table-definition-filter'>Patron Group is Qatar - EC-ILL, Loan Date is between May 1, 2019 - April 30, 2020, Aggregation Rule (Totals Row) for Loans, First Name IS American School of Doha</td>
+                      <td class='data-table-definition-date'>May 1, 2019 - April 30, 2020</td>
                     </tr>
                     <tr>
                       <td class='data-table-definition-left'>Loans to Main Campus Libraries</td>
-                      <td class='data-table-definition-logic'>...</td>
+                      <td class='data-table-definition-logic'>GU-Q ILL Shipment Data - Count Items shipped from GU-Q Library between dates May 1, 2019 - April 30, 2020</td>
                       <td class='data-table-definition-filter'>None</td>
-                      <td class='data-table-definition-date'>...</td>
+                      <td class='data-table-definition-date'>May 1, 2019 - April 30, 2020</td>
                     </tr>
                     <tr>
                       <td class='data-table-definition-left'>Loans from other Education City Libraries</td>
                       <td class='data-table-definition-logic'>...</td>
                       <td class='data-table-definition-filter'>None</td>
-                      <td class='data-table-definition-date'>...</td>
+                      <td class='data-table-definition-date'>May 1, 2019 - April 30, 2020</td>
                     </tr>
                     <tr>
                       <td class='data-table-definition-left'>Loans from Qatar University Library</td>
                       <td class='data-table-definition-logic'>...</td>
                       <td class='data-table-definition-filter'>None</td>
-                      <td class='data-table-definition-date'>...</td>
+                      <td class='data-table-definition-date'>May 1, 2019 - April 30, 2020</td>
                     </tr>
                     <tr>
                       <td class='data-table-definition-left'>Loans from Main Campus Libraries</td>
-                      <td class='data-table-definition-logic'>...</td>
+                      <td class='data-table-definition-logic'>GU-Q ILL Shipment Data - Count Items shipped to Lauinger Library between dates May 1, 2019 - April 30, 2020</td>
                       <td class='data-table-definition-filter'>None</td>
-                      <td class='data-table-definition-date'>...</td>
+                      <td class='data-table-definition-date'>May 1, 2019 - April 30, 2020</td>
                     </tr>
                   </tbody>
                 </table>
               </div>
             </div>
+            <div class="row border-bottom mt-4 pt-2"></div>
+            
+            <div class="row mx-2 mt-3 d-flex flex-column">
+              <h4 class="mb-3">Scanning</h4>
+              <div class="table-responsive">
+                <table class="table table-definitions table-striped table-bordered">
+                  <thead>
+                    <tr>
+                      <th>Data Source</th>
+                      <th>Logic</th>
+                      <th>Conditions/Filters</th>
+                      <th>Date Range</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class='data-table-definition-left'>GU-Q faculty requests</td>
+                      <td class='data-table-definition-logic'>Faculty Scan Requests Spreadsheet (under GU-Q Library Google Account)</td>
+                      <td class='data-table-definition-filter'>Timestamp between May 1, 2019 - April 30, 2020, Requestor Type IS GU-Q Faculty</td>
+                      <td class='data-table-definition-date'>May 1, 2019 - April 30, 2020</td>
+                    </tr>
+                    <tr>
+                      <td class='data-table-definition-left'>Main Campus requests</td>
+                      <td class='data-table-definition-logic'>Physical Count - Entered into Seats Available by Floor Spreadsheet (under GU-Q Library Google Account)</td>
+                      <td class='data-table-definition-filter'>Timestamp between May 1, 2019 - April 30, 2020, Requestor Type IS Main Campus</td>
+                      <td class='data-table-definition-date'>May 1, 2019 - April 30, 2020</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            
             <div class="row border-bottom mt-4 pt-2"></div>
             <div class="row mx-2 mt-3 d-flex flex-column">
               <h4 class="mb-3">Library Staff, Facilities, & Equipment</h4>
@@ -389,9 +421,9 @@
                   <tbody>
                     <tr>
                       <td class='data-table-definition-left'>All Items</td>
-                      <td class='data-table-definition-logic'>Physical Count</td>
+                      <td class='data-table-definition-logic'>Physical Count - Entered into Seats Available by Floor Spreadsheet (under GU-Q Library Google Account)</td>
                       <td class='data-table-definition-filter'>None</td>
-                      <td class='data-table-definition-date'>...</td>
+                      <td class='data-table-definition-date'>N/A</td>
                     </tr>
                   </tbody>
                 </table>
@@ -415,37 +447,37 @@
                       <td class='data-table-definition-left'>Library Website - Page Hits</td>
                       <td class='data-table-definition-logic'>Google Analytics > Library Website > Acquisition > Page Hits</td>
                       <td class='data-table-definition-filter'>None</td>
-                      <td class='data-table-definition-date'>July 1, 2019 - June 30, 20202</td>
+                      <td class='data-table-definition-date'>May 1, 2019 - April 30, 2020</td>
                     </tr>
                     <tr>
                       <td class='data-table-definition-left'>Library Website - Users</td>
                       <td class='data-table-definition-logic'>Google Analytics > Library Website > Audience > Users</td>
                       <td class='data-table-definition-filter'>None</td>
-                      <td class='data-table-definition-date'>July 1, 2019 - June 30, 20202</td>
+                      <td class='data-table-definition-date'>May 1, 2019 - April 30, 2020</td>
                     </tr>
                     <tr>
                       <td class='data-table-definition-left'>Library Website - Average Time on Page</td>
                       <td class='data-table-definition-logic'>Google Analytics > Library Website > Behavior > Avg. Time on Page</td>
                       <td class='data-table-definition-filter'>None</td>
-                      <td class='data-table-definition-date'>July 1, 2019 - June 30, 20202</td>
+                      <td class='data-table-definition-date'>May 1, 2019 - April 30, 2020</td>
                     </tr>
                     <tr>
                       <td class='data-table-definition-left'>Library Guides - Page Hits</td>
                       <td class='data-table-definition-logic'>Google Analytics > Library Website > Acquisition > Page Hits</td>
                       <td class='data-table-definition-filter'>None</td>
-                      <td class='data-table-definition-date'>July 1, 2019 - June 30, 20202</td>
+                      <td class='data-table-definition-date'>May 1, 2019 - April 30, 2020</td>
                     </tr>
                     <tr>
                       <td class='data-table-definition-left'>Library Guides - Users</td>
                       <td class='data-table-definition-logic'>Google Analytics > Library Website > Audience > Users</td>
                       <td class='data-table-definition-filter'>None</td>
-                      <td class='data-table-definition-date'>July 1, 2019 - June 30, 20202</td>
+                      <td class='data-table-definition-date'>May 1, 2019 - April 30, 2020</td>
                     </tr>
                     <tr>
                       <td class='data-table-definition-left'>Library Guides - Average Time on Page</td>
                       <td class='data-table-definition-logic'>Google Analytics > Library Website > Behavior > Avg. Time on Page</td>
                       <td class='data-table-definition-filter'>None</td>
-                      <td class='data-table-definition-date'>July 1, 2019 - June 30, 20202</td>
+                      <td class='data-table-definition-date'>May 1, 2019 - April 30, 2020</td>
                     </tr>
                   </tbody>
                 </table>
